@@ -114,6 +114,7 @@ main {
     background-color: #ffffff;
     max-width: 350px;
     padding: 64px 32px 40px 32px;
+    position: relative;
 }
 
 .first__card {
@@ -125,6 +126,12 @@ main {
     font-size: 32px;
     line-height: 40px;
     color: #ffffff;
+}
+
+.card__thumb {
+    position: absolute;
+    top: -28px;
+    left: 32px;
 }
 
 .card__content {
