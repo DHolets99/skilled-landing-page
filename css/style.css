@@ -25,13 +25,24 @@ a {
     transition: .2s all linear;
 }
 
+/*main__pic start*/
 
-.main__pic {
+.main__pic-desktop {
     position: absolute;
     right: -250px;
     top: -200px;
     z-index: -1;
 }
+
+.main__pic-tablet {
+    display: none;
+}
+
+.main__pic-mobile {
+    display: none;
+}
+
+/*main__pic start*/
 
 /* header start */
 
@@ -114,13 +125,15 @@ main {
 
 .cards__grid {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     row-gap: 80px;
     column-gap: 30px;
 }
 
 .card {
+    grid-row: span 2;
+    grid-column: span 2;
     border-radius: 15px;
     background-color: #ffffff;
     max-width: 350px;
@@ -176,6 +189,10 @@ main {
     margin: auto 0 0 0;
 }
 
+.card__button:hover, .card__button:focus, .card__button:active {
+    color: #FFA7C3;
+}
+
 /* cards end */
 
 /* footer start */
@@ -209,5 +226,78 @@ footer {
         max-width: 690px;
     }
 
+    .buttons {
+        padding: 9px 24px 11px 24px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    header {
+        height: 96px;
+        margin-bottom: 75px;
+    }
+
+    main {
+        margin-bottom: 210px;
+    }
+
+    .main__pic-desktop {
+        display: none;
+    }
+    
+    .main__pic-tablet {
+        display: block;
+        position: absolute;
+        right: -167px;
+        top: -125px;
+        z-index: -1;
+    }
+
+    .content {
+        max-width: 398px;
+    }
+
+    .content__title {
+        margin-bottom: 25px;
+    }
+
+    .content__title-text {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .content__inform {
+        margin-bottom: 24px;
+        max-width: 398px;
+    }
+    
+    .content__inform-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .content__button {
+        padding: 14px 37px;
+    }
+
+    .cards {
+        padding-bottom: 86px;
+    }
+
+    .cards__grid {
+        row-gap: 56px;
+        column-gap: 11px;
+    }
+
+
+    .card {
+        grid-row: span 2;
+        grid-column: span 3;
+        border-radius: 15px;
+        background-color: #ffffff;
+        max-width: 350px;
+        padding: 64px 32px 40px 32px;
+        position: relative;
+    }
     
 }
