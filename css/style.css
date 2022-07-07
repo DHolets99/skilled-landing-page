@@ -21,6 +21,8 @@ a {
     font-weight: 700;
     line-height: 28px;
     color: #ffffff;
+    cursor: pointer;
+    transition: .2s all linear;
 }
 
 
@@ -28,6 +30,7 @@ a {
     position: absolute;
     right: -250px;
     top: -200px;
+    z-index: -1;
 }
 
 /* header start */
@@ -46,6 +49,10 @@ header {
 
 .header__button {
     background: #13183F;
+}
+
+.header__button:hover, .header__button:active, .header__button:focus {
+    background: #666CA3;
 }
 
 /* header end */
@@ -90,6 +97,10 @@ main {
 .content__button {
     background: linear-gradient(#FF6F48, #F02AA6);
     padding: 19px 32px 16px 32px;
+}
+
+.content__button:hover, .content__button:active, .content__button:focus {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 }
 /* main end */
 
@@ -185,11 +196,15 @@ footer {
     background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 
+.footer__button:hover, .footer__button:active, .footer__button:focus {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
 /* footer end */
 
 /* tablet start */
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .wrapper {
         max-width: 690px;
     }
