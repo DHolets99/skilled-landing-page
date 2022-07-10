@@ -298,6 +298,9 @@ footer {
         max-width: 350px;
         padding: 64px 32px 40px 32px;
         position: relative;
+    }      
+
+    .footer {
+        padding: 36px 0;
     }
-    
 }
