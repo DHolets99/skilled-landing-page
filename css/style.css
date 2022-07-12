@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -225,6 +226,10 @@ footer {
 /* tablet start */
 
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .wrapper {
         max-width: 690px;
     }
@@ -311,5 +316,18 @@ footer {
 @media screen and (max-width: 375px) {
     .wrapper {
         max-width: 343px;
+    }
+
+    .main__pic-desktop {
+        display: none;
+    }
+
+    .main__pic-tablet {
+        display: none;
+    }
+
+    .main__pic-mobile {
+        display: block;
+        vertical-align: middle;
     }
 }
