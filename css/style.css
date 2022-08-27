@@ -37,6 +37,7 @@ a {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
 }
 
 .main__pic img {
@@ -353,56 +354,6 @@ footer {
 
     .footer {
         padding: 36px 0;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .wrapper {
-        max-width: 343px;
-    }
-
-    header {
-        height: 80px;
-        margin-bottom: 22px;
-    }
-
-    .header {
-        padding: 16px 0;
-    }
-    
-    main {
-        min-height: 632px;
-        position: relative;
-        margin-bottom: 66px;
-    }
-
-    .main__pic-desktop {
-        display: none;
-    }
-
-    .main__pic-tablet {
-        display: none;
-    }
-
-    .main__pic-mobile {
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 2;
-    }
-
-    .content {
-        
-    }
-
-    .cards__grid {
-        row-gap: 40px;
-    }
-
-    .card {
-        grid-row: span 2;
-        grid-column: span 6;
     }
 }
 
