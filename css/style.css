@@ -450,13 +450,26 @@ footer {
         margin-right: 0;
     }
 
+    .cards__grid {
+        row-gap: 40px;
+    }
+
     .card {
-        grid-row: span 1;
+        grid-row: span 4;
         grid-column: span 6;
         border-radius: 15px;
         background-color: #ffffff;
         max-width: 350px;
         padding: 64px 32px 40px 32px;
         position: relative;
-    }    
+    }
+
+    .first__card {
+        padding: 24px 29px 32px 29px;   
+    }
+
+    .first__card-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
 }
